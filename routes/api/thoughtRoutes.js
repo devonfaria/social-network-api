@@ -10,7 +10,7 @@ const {
 // Get ALL Thoughts
 router.route('/').get(getAllThoughts);
 // Get Single Thought
-router.route('/:id').get(getSingleThought);
+router.route('/:thoughtId').get(getSingleThought);
 // Create Thought
 router.route('/').post(createThought);
 // Update Thought
