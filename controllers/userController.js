@@ -24,10 +24,20 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
   updateUser(req, res) {
-
+    User.findOneAndUpdate({ _id: req.params.userId })
+      .select('-__v')
   },
   deleteUser(req, res) {
-
+    User.findOneAndRemove({ _id: req.params.userId })
+      .select('-__v')
+      .then((user) => {
+        if (!user) {
+          res.status(404).json({ message: 'No user to delete' })
+        } else {
+          res.json(`Deleted ${user.username}`)
+        }
+      })
+      .catch((err) => res.status(500).json(err));
   }
 };
 

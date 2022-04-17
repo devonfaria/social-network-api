@@ -24,9 +24,19 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
   updateThought(req, res) {
-
+    Thought.findOneAndUpdate({ _id: req.params.thoughtId })
+      .select('-__v')
   },
   deleteThought(req, res) {
-
-  },
+    Thought.findOneAndRemove({ _id: req.params.thoughtId })
+      .select('-__v')
+      .then((thought) => {
+        if (!thought) {
+          res.status(404).json({ message: 'No thought to delete' })
+        } else {
+          res.json(`Deleted thought ${thought.thoughtText}`)
+        }
+      })
+      .catch((err) => res.status(500).json(err));
+  }
 };
