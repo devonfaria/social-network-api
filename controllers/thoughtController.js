@@ -24,8 +24,19 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
   updateThought(req, res) {
-    Thought.findOneAndUpdate({ _id: req.params.thoughtId })
+    Thought.findOneAndUpdate(
+      { _id: req.params.thoughtId },
+      { $set: req.body },
+      { runValidators: true, new: true })
       .select('-__v')
+      .then((thought) => {
+        if (!thought) {
+          res.status(404).json({ message: 'No thought to update' })
+        } else {
+          res.json(thought)
+        }
+      })
+      .catch((err) => res.status(500).json(err));
   },
   deleteThought(req, res) {
     Thought.findOneAndRemove({ _id: req.params.thoughtId })
