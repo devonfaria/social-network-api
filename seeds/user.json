@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "625f0696d3a7eaa41c514474",
+    "username": "fredcharlotte",
+    "email": "fred@aol.com",
+    "thoughts": [],
+    "friends": [
+      "625f06aad3a7eaa41c514476",
+      "625f06b9d3a7eaa41c514478",
+      "625f06cbd3a7eaa41c51447a"
+    ]
+  },
+  {
+    "_id": "625f06aad3a7eaa41c514476",
+    "username": "barbasheville",
+    "email": "barb@aol.com",
+    "thoughts": [],
+    "friends": [
+      "625f06ead3a7eaa41c51447c",
+      "625f06b9d3a7eaa41c514478",
+      "625f06cbd3a7eaa41c51447a"
+    ]
+  },
+  {
+    "_id": "625f06b9d3a7eaa41c514478",
+    "username": "peterwilmington",
+    "email": "peter@aol.com",
+    "thoughts": [],
+    "friends": [
+      "625f06ead3a7eaa41c51447c",
+      "625f0696d3a7eaa41c514474",
+      "625f06cbd3a7eaa41c51447a"
+    ]
+  },
+  {
+    "_id": "625f06cbd3a7eaa41c51447a",
+    "username": "alicespartanburg",
+    "email": "alice@aol.com",
+    "thoughts": [],
+    "friends": [
+      "625f06ead3a7eaa41c51447c",
+      "625f0696d3a7eaa41c514474",
+      "625f06aad3a7eaa41c514476"
+    ]
+  },
+  {
+    "_id": "625f06ead3a7eaa41c51447c",
+    "username": "devonwinstonsalem",
+    "email": "devon@aol.com",
+    "thoughts": [],
+    "friends": [
+      "625f0696d3a7eaa41c514474",
+      "625f06b9d3a7eaa41c514478",
+      "625f06aad3a7eaa41c514476"
+    ]
+  }
+]

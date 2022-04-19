@@ -8,6 +8,7 @@ module.exports = {
   },
   getSingleUser(req, res) {
     User.findOne({ _id: req.params.userId })
+      .populate('friends')
       .select('-__v')
       .then((user) => {
         if (!user) {
@@ -49,6 +50,36 @@ module.exports = {
         }
       })
       .catch((err) => res.status(500).json(err));
-  }
+  },
+  addFriend(req, res) {
+    User.findOneAndUpdate(
+      { _id: req.params.userId },
+      { $push: { friends: req.params.friendId } },
+      { runValidators: true, new: true })
+      .select('-__v')
+      .then((user) => {
+        if (!user) {
+          res.status(404).json({ message: 'No user to update' })
+        } else {
+          res.json(user)
+        }
+      })
+      .catch((err) => res.status(500).json(err));
+  },
+  deleteFriend(req, res) {
+    User.findOneAndUpdate(
+      { _id: req.params.userId },
+      { $pull: { friends: req.params.friendId } },
+      { runValidators: true, new: true })
+      .select('-__v')
+      .then((user) => {
+        if (!user) {
+          res.status(404).json({ message: 'No user to update' })
+        } else {
+          res.json(user)
+        }
+      })
+      .catch((err) => res.status(500).json(err));
+  },
 };
 
