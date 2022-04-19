@@ -20,9 +20,12 @@ const userSchema = new mongoose.Schema({
       message: "Please enter a valid email"
     },
   },
-  thoughts: {
-    type: Array
-  },
+  thoughts: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Thought'
+    },
+  ],
   friends: [
     {
       type: Schema.Types.ObjectId,
