@@ -49,5 +49,35 @@ module.exports = {
         }
       })
       .catch((err) => res.status(500).json(err));
-  }
+  },
+  addReaction(req, res) {
+    Thought.findOneAndUpdate(
+      { _id: req.params.thoughtId },
+      { $push: { reactions: { reactionBody: req.body.reactionBody, username: req.body.username } } },
+      { runValidators: true, new: true })
+      .select('-__v')
+      .then((thought) => {
+        if (!thought) {
+          res.status(404).json({ message: 'No thought with that ID' })
+        } else {
+          res.json(thought)
+        }
+      })
+      .catch((err) => res.status(500).json(err));
+  },
+  deleteReaction(req, res) {
+    Thought.findOneAndUpdate(
+      { _id: req.params.thoughtId },
+      { $pull: { reactions: req.params.reactionId } },
+      { runValidators: true, new: true })
+      .select('-__v')
+      .then((thought) => {
+        if (!thought) {
+          res.status(404).json({ message: 'No thought to update' })
+        } else {
+          res.json(thought)
+        }
+      })
+      .catch((err) => res.status(500).json(err));
+  },
 };

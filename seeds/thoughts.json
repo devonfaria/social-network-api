@@ -1,0 +1,117 @@
+[
+  {
+    "_id": "625f18407cf13a9e1b4ab451",
+    "thoughtText": "I love ice cream and Little Debbie snacks.",
+    "createdAt": "2022-04-19T20:05:31.954Z",
+    "username": "fredcharlotte",
+    "reactions": [
+      {
+        "reactionId": "625f19e6503e9bd86f115210",
+        "reactionBody": "Me too!",
+        "username": "alicespartanburg",
+        "createdAt": "2022-04-19T20:21:58.404Z",
+        "_id": "625f19e9503e9bd86f115213"
+      },
+      {
+        "reactionId": "625f19e6503e9bd86f115210",
+        "reactionBody": "I prefer healthier snacks!",
+        "username": "peterwilmington",
+        "createdAt": "2022-04-19T20:21:58.404Z",
+        "_id": "625f1a09503e9bd86f115215"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "625f187b7cf13a9e1b4ab453",
+    "thoughtText": "How cool was the new Fantastic Beasts movie!",
+    "createdAt": "2022-04-19T20:05:31.954Z",
+    "username": "barbasheville",
+    "reactions": [
+      {
+        "reactionId": "625f19e6503e9bd86f115210",
+        "reactionBody": "I preferred the new Grindelwald actor to Johnny Depp.",
+        "username": "peterwilmington",
+        "createdAt": "2022-04-19T20:21:58.404Z",
+        "_id": "625f1a6f503e9bd86f115217"
+      },
+      {
+        "reactionId": "625f19e6503e9bd86f115210",
+        "reactionBody": "The crab scene was by far the funniest thing I have seen all year!",
+        "username": "devonwinstonsalem",
+        "createdAt": "2022-04-19T20:21:58.404Z",
+        "_id": "625f1a8c503e9bd86f115219"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "625f18a87cf13a9e1b4ab455",
+    "thoughtText": "Did you know that you can rent tools from your local Tool Library?",
+    "createdAt": "2022-04-19T20:05:31.954Z",
+    "username": "peterwilmington",
+    "reactions": [
+      {
+        "reactionId": "625f19e6503e9bd86f115210",
+        "reactionBody": "Where do you go? I need a tool library in Asheville.",
+        "username": "barbasheville",
+        "createdAt": "2022-04-19T20:21:58.404Z",
+        "_id": "625f1ad1503e9bd86f11521c"
+      },
+      {
+        "reactionId": "625f19e6503e9bd86f115210",
+        "reactionBody": "I go to the Asheville Tool Library near South Slope.",
+        "username": "peterwilmington",
+        "createdAt": "2022-04-19T20:21:58.404Z",
+        "_id": "625f1af1503e9bd86f11521e"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "625f18d97cf13a9e1b4ab457",
+    "thoughtText": "Who is going to the Doja Cat concert on Saturday?",
+    "createdAt": "2022-04-19T20:05:31.954Z",
+    "username": "alicespartanburg",
+    "reactions": [
+      {
+        "reactionId": "625f19e6503e9bd86f115210",
+        "reactionBody": "You know I'm there!",
+        "username": "devonwinstonsalem",
+        "createdAt": "2022-04-19T20:21:58.404Z",
+        "_id": "625f1b22503e9bd86f115221"
+      },
+      {
+        "reactionId": "625f19e6503e9bd86f115210",
+        "reactionBody": "Want to meet up before the show?",
+        "username": "fredcharlotte",
+        "createdAt": "2022-04-19T20:21:58.404Z",
+        "_id": "625f1b36503e9bd86f115223"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "625f190d7cf13a9e1b4ab459",
+    "thoughtText": "Modern day capitalism is currently concentrating wealth in the hands of a few.",
+    "createdAt": "2022-04-19T20:05:31.954Z",
+    "username": "devonwinstonsalem",
+    "reactions": [
+      {
+        "reactionId": "625f19e6503e9bd86f115210",
+        "reactionBody": "I believe socialism is scarier.",
+        "username": "barbasheville",
+        "createdAt": "2022-04-19T20:21:58.404Z",
+        "_id": "625f1bca503e9bd86f115226"
+      },
+      {
+        "reactionId": "625f19e6503e9bd86f115210",
+        "reactionBody": "I just want everyone to have a fair chance.",
+        "username": "fredcharlotte",
+        "createdAt": "2022-04-19T20:21:58.404Z",
+        "_id": "625f1c54503e9bd86f115228"
+      }
+    ],
+    "__v": 0
+  }
+]
