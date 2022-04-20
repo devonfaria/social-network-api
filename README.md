@@ -15,14 +15,12 @@
 
 ## Description
 
-Welcome to the ESocial Network API, a functional back-end application that tracks User thoughts, reactions to other user's thoughts, friend count, and more!  
+Welcome to the Social Network API, a functional back-end application that posts user's thoughts, thought reactions, friend counts, and more! The routes within this application allow you to create, update, delete, and view all users and thoughts. Each user will track both assoicated friends and the length of the friend list. All thoughts will track the user reactions and the amount of reactions.
+
+To create a full stack program, you will need to build a front-end that completes fetch requests using the routes designed in this application. Please contact me on GitHub if you need further assitance. 
 
 ## Visuals
 
-The following image is of the website where you will download Node JS, if necessary.
-
-![node j s website](./Assets/images/Download-Node-js.png)
-V
 This is a backend application, meaning that there are no visuals to share except a walkthrough video to show you what you can expect in your terminal to show that things are linked correctly. 
 
 [Click here for a video explaining installation and testing of the application](https://drive.google.com/file/d/18LL3mpnkWB_sBItLjntgRZ4OAQmvft6M/view?usp=sharing)
@@ -35,23 +33,11 @@ Then, clone this repository to your local computer, and open up the folder in yo
 
 `npm install`
 
-This will download the node modules MySQL2, Express, Nodemon, Sequelize, and DOTENV that this application needs to run on your local computer. After install, you will run the following command to open a MySQL shell in your terminal: 
+This will download the node modules Express, Mongo, and Mongoose that this application needs to run on your local computer. After install, you will run the following command to start the server: 
 
-`mysql -u root` 
+`npm start` 
 
-Then you will install the schema.sql file so MySQL can format your database. The semi-colon is necessary.
-
-`SOURCE db/schema.sql;`
-
-You can exit the shell by entering:
-
-`exit`
-
-And then type:
-
-`nodemon`
-
-If the last message in the terminal says "App listening on port 3001!", then you have installed the program correctly. If you ever need to shut down this server application use this command:
+If the last message in the terminal says "App listening at http://localhost:####!", then you have installed the program correctly. If you ever need to shut down this server application use this command:
 
 `^C`
 
@@ -62,7 +48,6 @@ If the last message in the terminal says "App listening on port 3001!", then you
 * Node JS
 * Mongo
 * Mongoose
-* DOTENV
 * Express
 
 ## Licenses
