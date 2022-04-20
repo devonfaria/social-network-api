@@ -27,7 +27,14 @@ module.exports = {
   updateUser(req, res) {
     User.findOneAndUpdate(
       { _id: req.params.userId },
-      { $set: req.body },
+      {
+        $set: {
+          username: req.body.username,
+          email: req.body.email,
+          thoughts: req.body.thoughts,
+          friends: req.body.friends
+        }
+      },
       { runValidators: true, new: true })
       .select('-__v')
       .then((user) => {

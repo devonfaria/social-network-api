@@ -3,7 +3,9 @@
     "_id": "625f0696d3a7eaa41c514474",
     "username": "fredcharlotte",
     "email": "fred@aol.com",
-    "thoughts": [],
+    "thoughts": [
+      "625f18407cf13a9e1b4ab451"
+    ],
     "friends": [
       "625f06aad3a7eaa41c514476",
       "625f06b9d3a7eaa41c514478",
@@ -14,7 +16,9 @@
     "_id": "625f06aad3a7eaa41c514476",
     "username": "barbasheville",
     "email": "barb@aol.com",
-    "thoughts": [],
+    "thoughts": [
+      "625f187b7cf13a9e1b4ab453"
+    ],
     "friends": [
       "625f06ead3a7eaa41c51447c",
       "625f06b9d3a7eaa41c514478",
@@ -25,7 +29,9 @@
     "_id": "625f06b9d3a7eaa41c514478",
     "username": "peterwilmington",
     "email": "peter@aol.com",
-    "thoughts": [],
+    "thoughts": [
+      "625f18a87cf13a9e1b4ab455"
+    ],
     "friends": [
       "625f06ead3a7eaa41c51447c",
       "625f0696d3a7eaa41c514474",
@@ -36,7 +42,9 @@
     "_id": "625f06cbd3a7eaa41c51447a",
     "username": "alicespartanburg",
     "email": "alice@aol.com",
-    "thoughts": [],
+    "thoughts": [
+      "625f18d97cf13a9e1b4ab457"
+    ],
     "friends": [
       "625f06ead3a7eaa41c51447c",
       "625f0696d3a7eaa41c514474",
@@ -47,7 +55,9 @@
     "_id": "625f06ead3a7eaa41c51447c",
     "username": "devonwinstonsalem",
     "email": "devon@aol.com",
-    "thoughts": [],
+    "thoughts": [
+      "625f190d7cf13a9e1b4ab459"
+    ],
     "friends": [
       "625f0696d3a7eaa41c514474",
       "625f06b9d3a7eaa41c514478",

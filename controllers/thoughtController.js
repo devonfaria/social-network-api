@@ -26,7 +26,14 @@ module.exports = {
   updateThought(req, res) {
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
-      { $set: req.body },
+      {
+        $set:
+        {
+          thoughtText: req.body.thoughtText,
+          username: req.body.username,
+          reactions: req.body.reactions
+        }
+      },
       { runValidators: true, new: true })
       .select('-__v')
       .then((thought) => {

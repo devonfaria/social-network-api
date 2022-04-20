@@ -7,12 +7,20 @@ const reactionSchema = new Schema({
   createdAt: { type: Date, default: new Date() }
 });
 
-const thoughtSchema = new Schema({
-  thoughtText: { type: String, required: true, minLength: 1, maxLength: 280 },
-  createdAt: { type: Date, default: new Date() },
-  username: { type: String, required: true },
-  reactions: [reactionSchema]
-});
+const thoughtSchema = new Schema(
+  {
+    thoughtText: { type: String, required: true, minLength: 1, maxLength: 280 },
+    createdAt: { type: Date, default: new Date() },
+    username: { type: String, required: true },
+    reactions: [reactionSchema],
+  },
+  {
+    toJSON: {
+      virtuals: true,
+    },
+    id: false,
+  }
+);
 
 thoughtSchema.virtual('reactionCount').get(function () {
   return this.reactions.length;
